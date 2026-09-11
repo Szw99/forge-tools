@@ -1,0 +1,25 @@
+# Dependencies and generated output
+node_modules/
+.next/
+out/
+.sites-runtime/
+
+# Local environment and tooling
+.env
+.env.*
+!.env.example
+.serena/
+
+# Local source material and delivery packages
+uploads/
+*.zip
+*.rar
+*.7z
+*.docx
+网站搭建服务费说明.md
+网站复刻资料收集表.md
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.log
