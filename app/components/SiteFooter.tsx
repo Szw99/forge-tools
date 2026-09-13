@@ -1,17 +1,1 @@
-import Image from "next/image";
-import WhatsAppIcon from "./WhatsAppIcon";
-
-export default function SiteFooter() {
-  return (
-    <>
-      <footer>
-        <div className="footer-inner">
-          <Image src="/forge-logo-transparent.png" alt="Forge" width={76} height={32} />
-          <p>@ 2026 Forge Tools</p>
-          <div><a href="/products">Products</a><a href="/factory">Factory</a><a href="/contact">Contact</a></div>
-        </div>
-      </footer>
-      <a className="whatsapp" href="https://wa.me/8613357064989" target="_blank" rel="noreferrer" aria-label="Contact us on WhatsApp"><WhatsAppIcon /></a>
-    </>
-  );
-}
+export default function SiteFooter(){return <><footer className="screenshot-footer"><div className="screenshot-footer-inner"><div><h3>About Us</h3><p>We are one of the biggest factory of putty knives、scrapers、plastering trowels in China.</p><p>Tags: putty knife, taping knife, painter scraper, drywall scraper, plastering trowels</p><div className="footer-social"><span>f</span><span>♥</span><span>in</span><span>◎</span></div></div><div><h3>Contacts</h3><p><b>Address:</b> Tanxian Town, Yongkang, Zhejiang, China</p><p><b>Phone:</b> 008613357064988</p><p><b>Email:</b> stone@forgetools.cn</p></div><div><h3>Message</h3><form className="screenshot-form"><input id="footer-name" name="name" placeholder="Your name"/><input id="footer-email" name="email" type="email" placeholder="Your e-mail"/><textarea id="footer-message" name="message" placeholder="Your message"/><button type="button">Submit</button></form></div></div></footer><div className="screenshot-copyright">YONGKANG FORGE TOOLS CO., LTD</div><div className="side-tools"><a href="https://wa.me/8613357064989">◉</a><a href="#">S</a></div></>}

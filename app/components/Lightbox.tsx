@@ -31,10 +31,10 @@ export default function Lightbox({ src, alt, className = "", fit = "contain" }: 
   }, [open]);
 
   const modal = open && typeof document !== "undefined" ? createPortal(
-    <div className="lightbox" role="dialog" aria-modal="true" aria-label={alt}>
-      <div className="lightbox-backdrop" onClick={() => setOpen(false)} aria-hidden="true" />
+    <div className="lightbox" role="dialog" aria-modal="true" aria-label={alt} onClick={() => setOpen(false)}>
+      <div className="lightbox-backdrop" aria-hidden="true" />
       <div className="lightbox-panel" onClick={(event) => event.stopPropagation()}>
-        <button ref={closeRef} type="button" className="lightbox-close" onClick={() => setOpen(false)} aria-label="Close image">×</button>
+        <button ref={closeRef} type="button" className="lightbox-close" onClick={(event) => { event.stopPropagation(); setOpen(false); }} aria-label="Close image">×</button>
         <Image src={src} alt={alt} fill sizes="92vw" className="lightbox-image" priority />
       </div>
     </div>,
